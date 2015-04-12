@@ -31,7 +31,7 @@
                     </div>
                     <div class="col-xs-8 col-xs-offset-4 col-sm-8 col-sm-offset-0 col-md-8 text-right header_title">
                         <h1 id="name">Zhe Cui</h1>
-                        <h3 id="title"class=" text-uppercase">Front-end<span>less</span> guy</h3>
+                        <h3 id="title" class=" text-uppercase">Front-end<span>less</span> guy</h3>
                     </div>
                 </div>
             </header>
@@ -87,7 +87,7 @@
                         <picture>
                             <source media="(min-width: 992px)" srcset="http://localhost:8000/images_resp/main-1600_large_2x.jpg 2x, http://localhost:8000/images_resp/main-800_large_1x.jpg" />
                             <source media="(min-width: 768px)" srcset="http://localhost:8000/images_resp/main-600x400_medium.jpg" />
-                            <img src="http://localhost:8000/images_resp/main-70pcx70pc_small.jpg" class="img-responsive" data-toggle="modal" data-target="#project1" alt="Stellar">
+                            <img src="http://localhost:8000/images_resp/main-70pcx70pc_small.jpg" class="img-responsive" data-toggle="modal" data-target="#project1" alt="main pic">
                         </picture>
                     </div>
                 </div>
@@ -109,12 +109,14 @@
                         <h4 class="modal-title" id="myModalLabel">Main picture</h4>
                     </div>
                     <div class="modal-body">
-                        <picture>
-                            <source media="(min-width: 992px)" srcset="http://localhost:8000/images_resp/stellar-1600_large_2x.jpg 2x, http://localhost:8000/images_resp/stellar-800_large_1x.jpg" />
-                            <source media="(min-width: 768px)" srcset="http://localhost:8000/images_resp/stellar-600x400_medium.jpg" />
-                            <img class="img-responsive" src="http://localhost:8000/images_resp/stellar-70pcx70pc_small.jpg" data-toggle="modal" data-target="#project1">
-                            This is my main pic #2.
-                        </picture>
+                        <figure>
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="http://localhost:8000/images_resp/stellar-1600_large_2x.jpg 2x, http://localhost:8000/images_resp/stellar-800_large_1x.jpg" />
+                                <source media="(min-width: 768px)" srcset="http://localhost:8000/images_resp/stellar-600x400_medium.jpg" />
+                                <img class="img-responsive" src="http://localhost:8000/images_resp/stellar-70pcx70pc_small.jpg" data-toggle="modal" data-target="#project1" alt="Stellar">
+                            </picture>
+                            <figcaption>This is my main pic #2.</figcaption>
+                        </figure>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -124,19 +126,19 @@
         </div>
     </body>
     <script>
-      /*
-       * Open the drawer when the menu ison is clicked.
-       */
-      var menu = document.querySelector('#menu');
-      var drawer = document.querySelector('.nav');
-      var main = document.querySelector('.container');
+        /*
+        * Open the drawer when the menu ison is clicked.
+        */
+        var menu = document.querySelector('#menu');
+        var drawer = document.querySelector('.nav');
+        var main = document.querySelector('.container');
 
-      menu.addEventListener('click', function(e) {
-        drawer.classList.toggle('open');
-        e.stopPropagation();
-      });
-      main.addEventListener('click', function() {
-        drawer.classList.remove('open');
-      });
+        menu.addEventListener('click', function(e) {
+            drawer.classList.toggle('open');
+            e.stopPropagation();
+            });
+        main.addEventListener('click', function() {
+            drawer.classList.remove('open');
+            });
     </script>
 </html>    
