@@ -17,6 +17,9 @@ header {
     border-bottom: 1px solid #aaa;
 }
 .header_logo svg {
+    stroke: navy;
+    stroke-width: 1px;
+    fill: lightgray;
     margin-top: 1em;
 }
 .header_menu {
